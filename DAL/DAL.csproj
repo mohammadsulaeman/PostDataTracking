@@ -40,6 +40,7 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,12 +68,14 @@
     <Compile Include="FavLogoTitle.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="LogDAO.cs" />
     <Compile Include="Log_Table.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Meta.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="MetaDAO.cs" />
     <Compile Include="Post.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
@@ -105,12 +108,14 @@
     <Compile Include="SocialMedia.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SocialMediaDAO.cs" />
     <Compile Include="sysdiagram.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
     <Compile Include="T_User.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserDAO.cs" />
     <Compile Include="Video.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
