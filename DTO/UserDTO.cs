@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
+
 
 namespace DTO
 {
@@ -21,8 +23,11 @@ namespace DTO
 
         public string ImagePath { get; set; }
 
+        [Required(ErrorMessage ="Please fill the name area")]
         public string Name { get; set; }
 
         public bool isAdmin { get; set; }
+        [Display(Name ="User Image")]
+        public HttpPostedFileBase UserImage { get; set; }
     }
 }
